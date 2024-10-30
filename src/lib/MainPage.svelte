@@ -1,4 +1,5 @@
 <script lang="ts">
+	import EnterCt from './EnterCt.svelte';
 	import Photos from './Photos.svelte';
 	import Sending from './Sending.svelte';
 	let showPhotos = false;
@@ -23,7 +24,7 @@
 		}}
 	/>
 {:else}
-	<h1 class="text-center text-xl p-6 font-bold text-indigo-500">Social Cracker</h1>
+	<!-- <h1 class="text-center text-xl p-6 font-bold text-indigo-500">Social Cracker</h1> -->
 	<main class="flex text-xl flex-col gap-3 justify-center items-center min-h-screen">
 		{#if hasResult}
 			<button on:click={() => (showPhotos = true)} class="underline text-blue-600"
@@ -43,6 +44,7 @@
 		>
 			Scan Local Area</button
 		>
+		<EnterCt />
 	</main>
 {/if}
 {#if showPhotos}

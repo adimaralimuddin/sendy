@@ -34,12 +34,10 @@
 
 	const aborting = () => {
 		progAbort = 0;
-		let maxAbortion = 150;
+		let maxAbortion = 100;
 		status = 'aborting';
 		let interval = setInterval(() => {
-			// console.log('progAbort = ', progAbort);
-
-			progAbort += 1;
+			progAbort += 2;
 			if (progAbort > maxAbortion) {
 				onAbort();
 				clearInterval(interval);
