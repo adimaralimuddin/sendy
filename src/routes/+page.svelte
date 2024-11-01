@@ -3,5 +3,6 @@
 	import SendPage from '$lib/MainPage.svelte';
 </script>
 
-<SendPage />
+<h1>site is currently unavailable...</h1>
+<!-- <SendPage /> -->
 <!-- <EnterCt /> -->
