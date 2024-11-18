@@ -4,5 +4,5 @@
 </script>
 
 <h1>site is currently unavailable...</h1>
-<!-- <SendPage /> -->
+<SendPage />
 <!-- <EnterCt /> -->
