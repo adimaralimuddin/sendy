@@ -15,7 +15,7 @@
 	};
 </script>
 
-{#if isSending}
+<!-- {#if isSending}
 	<Sending
 		{type}
 		{onAbort}
@@ -24,7 +24,6 @@
 		}}
 	/>
 {:else}
-	<!-- <h1 class="text-center text-xl p-6 font-bold text-indigo-500">Social Cracker</h1> -->
 	<main class="flex text-xl flex-col gap-3 justify-center items-center min-h-screen">
 		{#if hasResult}
 			<button on:click={() => (showPhotos = true)} class="underline text-blue-600"
@@ -46,14 +45,15 @@
 		>
 		<EnterCt />
 	</main>
-{/if}
-{#if showPhotos}
-	<Photos
-		onBack={() => {
-			showPhotos = false;
-		}}
-	/>
-{/if}
+{/if} -->
+<!-- {#if showPhotos} -->
+<Photos
+	onBack={() => {
+		showPhotos = false;
+	}}
+/>
+
+<!-- {/if} -->
 
 <style>
 	.btn {
